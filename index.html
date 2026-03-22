@@ -2,46 +2,56 @@
 <html>
 <head>
   <title>Test1</title>
+  
+  h1 {
+    text-align: center;
+  }
   <style>
-  .top-right-box {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: white;
-    padding: 15px;
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 30px;
+    background: #f5f5f5;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
   }
 
-  .top-right-box input {
-    width: 100%;
-    margin: 5px 0;
-    padding: 5px;
+  .center-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
   }
 
-  .top-right-box button {
-    width: 100%;
-    padding: 5px;
+  .center-box button {
+    width: 95%;
+    padding: 10px;
     background: black;
     color: white;
     border: none;
     cursor: pointer;
   }
-  h1 {
-    text-align: center;
-  }
+</style>
 </style>
 </head>
 <body>
   <h1>Test1</h1>
   <p>Ryan Laqtib</p>
-  <div class="top-right-box">
-  <h3>Sign Up</h3>
-  <input type="text" placeholder="Username">
-  <input type="email" placeholder="Email">
-  <input type="password" placeholder="Password">
-  <button>Sign Up</button>
+  <div class="center-box">
+  <h2>Sign Up</h2>
+
+  <input type="text" id="username" placeholder="Username">
+  <input type="password" id="password" placeholder="Password">
+
+  <button onclick="goNext()">Done</button>
 </div>
 </body>
 </html>
