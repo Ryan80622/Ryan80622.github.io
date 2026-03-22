@@ -2,9 +2,43 @@
 <html>
 <head>
   <title>Clothing App</title>
+  <style>
+  .top-right-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 200px;
+  }
+
+  .top-right-box input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+  }
+
+  .top-right-box button {
+    width: 100%;
+    padding: 5px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
 </head>
 <body>
   <h1>Clothing App</h1>
   <p>Ryan Laqtib</p>
+  <div class="top-right-box">
+  <h3>Sign Up</h3>
+  <input type="text" placeholder="Username">
+  <input type="email" placeholder="Email">
+  <input type="password" placeholder="Password">
+  <button>Sign Up</button>
+</div>
 </body>
 </html>
